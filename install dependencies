@@ -1,0 +1,18 @@
+name: install dependencies
+
+    branches: [ "hannahz12" ]
+  pull_request: hannahz12
+    branches: [ "hannahz12" ]
+
+  build: install dependencies
+
+
+  name: configure
+  run: ./configure
+
+  name: Install dependencies
+  run: make
+
+
+  name: Run distcheck
+  run: make distcheck
